@@ -2,10 +2,9 @@
 
 ## Project Background
 
-The Census Bureau's Monthly Retail Trade Survey (MRTS) provides key insights into the retail and food services industries, critical drivers of U.S. consumer spending and economic health. This project analyzes MRTS data from 2017 to 2023, focusing on monthly sales trends, seasonally adjusted metrics, and category-specific performance.
+The Monthly Retail Trade Survey (MRTS), conducted by the U.S. Census Bureau, estimates monthly sales for retail and food services using a sample of 4,800 firms. This sample then is weighted to represent over three million businesses nationwide. Data is seasonally adjusted and benchmarked against annual surveys for consistency.
 
-The analysis aims to identify sector trends, assess the relationship between retail and food services, and evaluate the impact of events like the COVID-19 pandemic. By leveraging government data, this project highlights actionable insights for businesses, policymakers, and researchers to better understand the evolving dynamics of these industries.
-
+This project analyzes MRTS data from 2017 to 2023, focusing on sales trends, industry performance, and the impact of major economic events, such as the COVID-19 pandemic. The findings aim to inform decision-making for businesses, policymakers, and researchers.
 <details>
 <summary>More about the data used</summary>
 
