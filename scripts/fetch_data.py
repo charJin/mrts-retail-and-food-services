@@ -76,13 +76,9 @@ def save_data(df, filename):
 def main():
     print("Fetching data for SM...")
     sm_data_adjusted = fetch_data("SM", "yes")
-    if not sm_data_adjusted.empty:
-        save_data(sm_data_adjusted, "sm_data_season_adjusted.csv")
     
     print("Fetching data for E_SM...")
     esm_data_adjusted = fetch_data("E_SM", "yes")
-    if not esm_data_adjusted.empty:
-        save_data(esm_data_adjusted, "esm_data_season_adjusted.csv")
     
     # Combine
     if not sm_data_adjusted.empty and not esm_data_adjusted.empty:
@@ -93,13 +89,9 @@ def main():
     print("Fetching for data not seasonally adjusted")
     print("Fetching data for SM...")
     sm_data_not_adjusted = fetch_data("SM", "no")
-    if not sm_data_not_adjusted.empty:
-        save_data(sm_data_not_adjusted, "sm_data_season_not_adjusted.csv")
     
     print("Fetching data for E_SM...")
     esm_data_not_adjusted = fetch_data("E_SM", "no")
-    if not esm_data_not_adjusted.empty:
-        save_data(esm_data_not_adjusted, "esm_data_season_not_adjusted.csv")
     
     # Combine
     if not sm_data_not_adjusted.empty and not esm_data_not_adjusted.empty:

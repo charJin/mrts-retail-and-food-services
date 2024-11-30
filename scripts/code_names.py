@@ -19,11 +19,22 @@ category_data = {
         "Food and Beverage Stores", "Retail Trade and Food Services, ex Auto and Gas",
         "Furniture and Home Furnishings Stores", "Retail Trade and Food Services, ex Gas",
         "Food Services and Drinking Places"
+    ],
+    "high_level_category": [
+        "Retail and Food Services", "Retail Trade", "Retail Trade",
+        "Retail Trade", "Retail and Food Services",
+        "Retail Trade", "Retail Trade", "Retail Trade",
+        "Retail Trade", "Nonstore Trade",
+        "Retail Trade", "Retail Trade",
+        "Retail Trade", "Retail Trade",
+        "Retail Trade", "Retail Trade",
+        "Retail Trade", "Retail and Food Services",
+        "Retail Trade", "Retail and Food Services",
+        "Food Services"
     ]
 }
 
 categories_df = pd.DataFrame(category_data)
+categories_df.to_csv("../data/code_categories.csv", index=False)
 
-categories_df.to_csv("code_categories.csv", index=False)
-
-print(f"Category codes saved")
+print("Category codes with high-level categories saved in ../data directory.")
