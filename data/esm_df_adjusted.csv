@@ -1,4 +1,4 @@
-monthly_sales_percent_change,category_code,seasonally_adj,data_type_code,time,category_name,high_level_category
+monthly_sales_percent_change,category_code,seasonally_adjusted,data_type_code,time,category_name,high_level_category
 0.9,44X72,True,E_SM,2023-06-01,Retail Trade and Food Services,Retail and Food Services
 0.7,44X72,True,E_SM,2023-12-01,Retail Trade and Food Services,Retail and Food Services
 0.0,4521E,True,E_SM,2023-04-01,Department Stores,Retail Trade

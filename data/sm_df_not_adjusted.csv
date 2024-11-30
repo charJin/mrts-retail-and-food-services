@@ -1,4 +1,4 @@
-monthly_sales,category_code,seasonally_adj,data_type_code,time,category_name,high_level_category
+monthly_sales,category_code,seasonally_adjusted,data_type_code,time,category_name,high_level_category
 92353.0,722,False,SM,2023-03-01,Food Services and Drinking Places,Food Services
 92421.0,722,False,SM,2023-09-01,Food Services and Drinking Places,Food Services
 8376.0,442,False,SM,2017-02-01,Furniture and Home Furnishings Stores,Retail Trade
