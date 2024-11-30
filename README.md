@@ -36,4 +36,4 @@ Based on the findings, recommendations are proposed for future strategies and fu
 
 Here is the Entity Relationship Diagram:
 
-![Entity Relationship Diagram](../images/retail_food_diagram.png)
+![Entity Relationship Diagram](images/retail_food_diagram.png)
