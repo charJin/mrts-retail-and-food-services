@@ -3,7 +3,7 @@ import requests
 import pandas as pd 
 
 #https://api.census.gov/data/timeseries/eits/mrts?get=cell_value,time_slot_id,error_data,category_code&for&seasonally_adj&data_type_code&time=from+2017+to+2023-12&key=ed012dc3e41299f545cef6f21b051e481614c867
-BASE_URL = 'https://api.census.gov/data/timeseries/eits/mrts'
+BASE_URL = 'https://api.census.gov/data/timeseries/eits/marts'
 API_KEY = 'ed012dc3e41299f545cef6f21b051e481614c867'
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data')
