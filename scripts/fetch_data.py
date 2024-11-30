@@ -99,7 +99,7 @@ def main():
     print("Fetching data for E_SM...")
     esm_data_not_adjusted = fetch_data("E_SM", "no")
     if not esm_data_not_adjusted.empty:
-        save_data(esm_data, "esm_data_season_not_adjusted.csv")
+        save_data(esm_data_not_adjusted, "esm_data_season_not_adjusted.csv")
     
     # Combine
     if not sm_data_not_adjusted.empty and not esm_data_not_adjusted.empty:
