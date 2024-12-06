@@ -26,7 +26,7 @@ SQL queries were employed to extract actionable insights tailored for relevant b
 
 **Part 3: Visualizations**
 
-Tableau was used to create an interactive dashboard, designed primarily to easily monitor key metrics.
+Python charts and Tableau were used to create explorative visualizations and an interactive dashboard, designed primarily to easily monitor key metrics.
 
 **Part 4: Recommendations & Next Steps**
 
@@ -37,3 +37,34 @@ Based on the findings, recommendations are proposed for future strategies and fu
 Here is the Entity Relationship Diagram:
 
 ![Entity Relationship Diagram](images/retail_food_diagram.png)
+
+
+## Insights
+
+### Sale Trends and Growth Rates
+- Total Retail Trade and Food Services averages () in annual sales with () dollars of sale per year.
+- The top categories are ()
+- Sales show seaonality as ()
+- Seasonality is vary across years as ()
+
+### COVID Trends and Recovery
+- Total Retail Trade and Foood Services declined ()
+- Retail Trade declined()
+- Food Services declined()
+- () , (), and () categories seem to have trouble recovering from pre covid
+- (), (), and () categories shows an increase in sales after the emersion of COVID
+
+### Market Risks
+- (), (), and () categories are most volatile
+- External shocks (e.g., economic downturns) affect (), (),  and () categories in () ways. () categories are more sensitive.
+
+## Recommendations & Next Steps
+
+### Corporate Executives
+ - some advice
+### Sales and Marketing Teams
+- some advice
+### Supply Chain and Operations Teams
+- some advice 
+
+
