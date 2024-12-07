@@ -36,8 +36,9 @@ Based on the findings, recommendations are proposed for future strategies and fu
 
 Here is the Entity Relationship Diagram:
 
-![Entity Relationship Diagram](images/retail_food_diagram.png)
-
+<p align="center">
+  <img src="images/retail_food_diagram.png" alt="Entity Relationship Diagram" width="800">
+</p>
 
 ## Insights
 
@@ -56,6 +57,12 @@ Here is the Entity Relationship Diagram:
     - Consumers seeking more social interactions and leisure activities post-pandemic.
     - A shift toward "revenge spending" after prolonged restrictions.
     - The resumption of major events and gatherings.
+      
+<p align="center">
+  <img src="images/yoy_heatmap.png" alt="YoY Heatmap" width="800">
+</p>
+
+
 
 - **Categories Most Negatively Impacted During COVID**:  
   Several categories experienced significant declines in 2020, including:
