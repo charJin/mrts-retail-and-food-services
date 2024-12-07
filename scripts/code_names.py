@@ -23,12 +23,12 @@ category_data = {
     "high_level_category": [
         "Retail and Food Services", "Retail Trade", "Retail Trade",
         "Retail Trade", "Retail and Food Services",
-        "Retail Trade", "Retail Trade", "Retail Trade",
+        "Retail Trade", "Retail Trade", "Retail Trade Related to Food",
         "Retail Trade", "Nonstore Trade",
         "Retail Trade", "Retail Trade",
         "Retail Trade", "Retail Trade",
         "Retail Trade", "Retail Trade",
-        "Retail Trade", "Retail and Food Services",
+        "Retail Trade Related to Food", "Retail and Food Services",
         "Retail Trade", "Retail and Food Services",
         "Food Services"
     ]
