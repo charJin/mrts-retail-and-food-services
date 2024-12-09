@@ -62,8 +62,6 @@ Here is the Entity Relationship Diagram:
   <img src="images/yoy_heatmap.png" alt="YoY Heatmap" width="800">
 </p>
 
-
-
 - **Categories Most Negatively Impacted During COVID**:  
   Several categories experienced significant declines in 2020, including:
   - **Clothing and Accessories Stores**: Sales dropped **-24.5% in 2020**, likely due to reduced demand for apparel as social activities were restricted and work-from-home trends increased.
@@ -85,6 +83,9 @@ Here is the Entity Relationship Diagram:
   - **Electronics and Appliance Stores**: Sales had already declined slightly pre-COVID, from **$92,546 in 2017** to **$90,962 in 2019** (**-1.7%**), reflecting competition from online marketplaces like Amazon and Best Buy. The category experienced a sharp decline of **-18.4% in 2020**, followed by limited recovery (**+27.3% in 2021**) and slight declines in both 2022 (**-1.2%**) and 2023 (**-1.2%**).  
     - Supply chain disruptions, inflation, and shifting consumer priorities have likely contributed to this slow recovery.
 
+<p align="center">
+  <img src="images/yoy_csv.png" alt="YoY CSV">
+</p>
 
 ### Market Risks
 - (), (), and () categories are most volatile
