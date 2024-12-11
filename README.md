@@ -4,6 +4,7 @@ The Monthly Retail Trade Survey (MRTS) provides insights into the economic activ
 
 This project analyzes MRTS data from 2017 to 2023, focusing on sales trends, industry performance, and the impact of major economic events, such as the COVID-19 pandemic. The findings aim to inform decision-making for businesses, policymakers, and researchers.
 <details>
+  
 <summary>More about the data used</summary>
 
 The data was retrieved from the Census Bureau's Monthly Retail Trade Survey (MRTS) API. 
@@ -11,7 +12,7 @@ The data was retrieved from the Census Bureau's Monthly Retail Trade Survey (MRT
 - **API Call Construction**: A Python script was used to query the API with parameters specifying the data type, time range (2017–2023). Both seasonally adjusted and unadjusted metrics are retrieved.
 - **Data Handling**: The API response was parsed and transformed into a structured format (CSV) for further analysis.
 
-The Python script used for this process is available [here](scripts/fetch_data.py).
+> The Python script used for this process is available [here](scripts/fetch_data.py).
 </details>
 
 **Work Flow**:
@@ -27,6 +28,7 @@ SQL queries were employed to extract actionable insights tailored for relevant b
 **Part 3: Visualizations**
 
 Python charts and Tableau were used to create explorative visualizations and an interactive dashboard, designed primarily to easily monitor key metrics.
+> **Note**: Some visualizations were performed early in the process to better understand the data and guide insight generation.
 
 **Part 4: Recommendations & Next Steps**
 
@@ -37,16 +39,27 @@ Based on the findings, recommendations are proposed for future strategies and fu
 Here is the Entity Relationship Diagram:
 
 <p align="center">
-  <img src="images/retail_food_diagram.png" alt="Entity Relationship Diagram" width="800">
+  <img src="images/retail_food_diagram.png" alt="Entity Relationship Diagram" width="680">
 </p>
 
 ## Insights
 
 ### Sale Trends and Growth Rates
-- Total Retail Trade and Food Services averages $478,073.25 in monthly sales with $6,828,246 of sale per year.
+- Total **Retail Trade and Food Services** averages **$478,073.25** in monthly sales, contributing to **$6,828,246 annually**.  
 - The top categories are **"Motor Vehicle and Parts Dealers"**, **"Auto and Other Motor Vehicles"**, **"Food and Beverage Stores"**, **"Food Services and Drinking Places"**, **"General Merchandise Stores"**, and **"Grocery Stores"**.
-- Sales show seaonality as ()
-- Seasonality is vary across years as ()
+- **Seasonality and Trends**:  
+  Sale trends from **2017 to 2023** exhibit clear **seasonal patterns** across multiple categories. Below is an analysis of these patterns for some of these categories, supported by seasonal decomposition:
+  
+<p align="center">
+  <img src="images/categories_seasonal.png" alt="Four Categories Seaosonal Plot" width="680">
+</p>
+
+- The general category of **Retail Trade** shows steady and consistent upward trend over the years, reflecting the resilience and growth of the overall retail sector. It exhibits clear seasonality, with peaks occurring annually in November and December during holiday shopping periods, such as Black Friday and Christmas. These peaks have grown in magnitude over time, suggesting stronger consumer spending during these periods. Most fluctuations in this category are well-accounted for by the trend and seasonal components, with small and random residuals indicating limited unexplained variability.
+  - **Food Services and Drinking Places**: Separating Food Services and Drinking Places separately, noticed that seasonality component shows peaks in summer months. This likely reflects the preference of dining out during vacations and warm weather.
+  - **Nonstore Retailers**: Nonstore Retailers show a strong and sustained upward trend, highlighting the rapid expansion of e-commerce, particularly in the post-pandemic era. Sales consistently peak in November and December, driven by holiday shopping and promotional events like Cyber Monday. The seasonal troughs in January and February align with a post-holiday spending slowdown as consumers adjust their budgets. The small residuals indicate that the identified trends and seasonal patterns capture the majority of the variability in this category, underscoring its stability and consistent growth.
+  - **Gasoline Stations**: Gasoline Stations display an irregular trend influenced by economic disruptions. Seasonal peaks consistently occur during the summer months (June to August), most likely driven by increased travel and vacation activity, while troughs are observed in the colder months of January and February when travel activity is typically reduced. Relatively larger residuals in this category reflect the influence of external factors such as fluctuating gas prices, economic conditions, and geopolitical events, which contribute to greater variability in this sector compared to others.
+  - **Clothing and Accessories Stores**: Similar to other categories, seasonal peaks are observed in November and December, driven by holiday shopping, while secondary peaks in April and May likely reflect spring collections, Easter shopping, and pre-summer purchases. Sales typically decline in January and February, mirroring post-holiday spending adjustments.
+
 
 ### COVID Trends and Recovery
 - In 2018 and 2019, there was YoY growth of **+4.33% and +3.11%** in Total Retail Trade and Food Services, with annual sales of **$5,985,551 in 2018** and **$6,171,969 in 2019**. However, with the onset of COVID-19, YoY growth in 2020 declined to only **+0.76%**.
@@ -59,7 +72,7 @@ Here is the Entity Relationship Diagram:
     - The resumption of major events and gatherings.
       
 <p align="center">
-  <img src="images/yoy_heatmap.png" alt="YoY Heatmap" width="800">
+  <img src="images/yoy_heatmap.png" alt="YoY Heatmap" width="680">
 </p>
 
 - **Categories Most Negatively Impacted During COVID**:  
