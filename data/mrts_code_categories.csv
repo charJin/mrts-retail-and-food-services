@@ -1,0 +1,66 @@
+category_code,category_name,high_level_category
+44X72,Retail Trade and Food Services,Broad Retail and Food Services
+44Y72,"Retail Trade and Food Services, ex Auto",Broad Retail and Food Services
+44Z72,"Retail Trade and Food Services, ex Gas",Broad Retail and Food Services
+44W72,"Retail Trade and Food Services, ex Auto and Gas",Broad Retail and Food Services
+44000,Retail Trade,Broad Retail and Food Services
+4400A,"Retail Trade, ex Auto",Broad Retail and Food Services
+4400C,GAFO,Broad Retail and Food Services
+441,Motor Vehicle and Parts Dealers,Motor Vehicles and Parts
+441X,Auto and Other Motor Vehicles,Motor Vehicles and Parts
+4411,Automobile Dealers,Motor Vehicles and Parts
+44111,New Car Dealers,Motor Vehicles and Parts
+44112,Used Car Dealers,Motor Vehicles and Parts
+4413,"Automotive Parts, Accessories, and Tire Stores",Motor Vehicles and Parts
+4423X,"Furniture, Home Furnishings, Electronics, and Appliance Stores",Furniture and Electronics
+442,Furniture and Home Furnishings Stores,Furniture and Electronics
+4421,Furniture Stores,Furniture and Electronics
+4422,Home Furnishings Stores,Furniture and Electronics
+44221,Floor Covering Stores,Furniture and Electronics
+442299,All Other Home Furnishings Stores,Furniture and Electronics
+443,Electronics and Appliance Stores,Electronics
+443141,Household Appliance Stores,Electronics
+443142,Electronics Stores,Electronics
+444,Building Material and Garden Equipment and Supplies Dealers,Building and Garden
+4441,Building Material and Supplies Dealers,Building and Garden
+44412,Paint and Wallpaper Stores,Building and Garden
+44413,Hardware Stores,Building and Garden
+445,Food and Beverage Stores,Food and Beverage
+4451,Grocery Stores,Food and Beverage
+44511,Supermarkets and Other Grocery (Except Convenience) Stores,Food and Beverage
+4453,"Beer, Wine, and Liquor Stores",Food and Beverage
+446,Health and Personal Care Stores,Health and Personal Care
+44611,Pharmacies and Drug Stores,Health and Personal Care
+447,Gasoline Stations,Gas
+448,Clothing and Clothing Accessories Stores,Clothing and Accessories
+4481,Clothing Stores,Clothing and Accessories
+44811,Men's Clothing Stores,Clothing and Accessories
+44812,Women's Clothing Stores,Clothing and Accessories
+44814,Family Clothing Stores,Clothing and Accessories
+44819,Other Clothing Stores,Clothing and Accessories
+4482,Shoe Stores,Clothing and Accessories
+44831,Jewelry Stores,Clothing and Accessories
+451,"Sporting Goods, Hobby, Musical Instrument, and Book Stores",Sporting Goods and Hobby
+45111,Sporting Goods Stores,Sporting Goods and Hobby
+45112,"Hobby, Toy, and Game Stores",Books & Stationery
+451211,Book Stores,Books & Stationery
+452,General Merchandise Stores,General Merchandise
+4521E,Department Stores,Department Stores
+452112E,Discount Department Stores,Department Stores
+452111E,Department Stores (Excl. Discount Department Stores),Department Stores
+4529,Other General Merchandise Stores,General Merchandise
+45291,Warehouse Clubs and Superstores,General Merchandise
+45299,All Other General Merchandise Stores,General Merchandise
+453,Miscellaneous Store Retailers,Books & Stationery
+4532,"Office Supplies, Stationery, and Gift Stores",Books & Stationery
+45321,Office Supplies and Stationery Stores,Books & Stationery
+45322,"Gift, Novelty, and Souvenir Stores",Books & Stationery
+45330,Used Merchandise Stores,Miscellaneous Specialty
+454,Nonstore Retailers,Nonstore Retailers
+4541,Electronic Shopping and Mail-order Houses,Nonstore Retailers
+45431,Fuel Dealers,Gas
+722,Food Services and Drinking Places,Food Services
+7224,Drinking Places,Food Services
+7225,Restaurants and Other Eating Places,Food Services
+722511,Full Service Restaurants,Food Services
+72251X,Limited Service Eating Places,Food Services
