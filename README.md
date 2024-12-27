@@ -101,7 +101,45 @@ Here is the Entity Relationship Diagram:
 </p>
 
 ### Market Risks
-- (), (), and () categories are most volatile
+The **Coefficient of Variation (CV)** is a powerful metric for assessing market risks and volatility, particularly in retail sales. By calculating CV from seasonally unadjusted MRTS monthly sales data, the analysis retains the natural variability of the market, enabling a deeper understanding of the risks faced by different categories. CV highlights how much sales fluctuate relative to their average, making it a suitable tool to identify categories with high volatility.
+
+<p align="center">
+  <img src="images/cv_bargraph.png" alt="CV Bargraph" width="680">
+</p>
+
+- **Categories with the Highest CV**
+  - **Nonstore Retailers (CV = 0.29)**: 
+    This category exhibits the highest CV, reflecting rapid growth and susceptibility to variability. It highlights the ongoing e-commerce trend and the dynamic nature of this category.
+  - **Food Services and Drinking Places (CV = 0.19):**  
+    Volatility in this category can be attributed to seasonality (e.g., holidays and summer months) and external factors like the pandemic.
+  - **Clothing and Clothing Accessories Stores (CV = 0.16)**:  
+    This category is driven by seasonal trends, fashion cycles, and discretionary spending, making it prone to fluctuations.
+
+- **Correlation Between CV and YoY Growth**
+  - High CV does not necessarily imply negative growth. Categories with high CV can still experience significant growth.
+  - **Results:**  
+    - **Correlation Coefficient = 0.67**, **P-value ≈ 0.0000**  
+      This strong positive correlation suggests that categories with higher volatility also tend to exhibit higher growth rates on average. This aligns with the notion that rapidly evolving or high-risk markets, such as e-commerce, are often associated with high growth.
+
+- **Outlier Analysis: Z-Scores for CV and YoY Growth**
+  - To further investigate the relationship between CV and YoY growth, Z-scores were calculated for both metrics to identify outliers. Categories with Z-scores exceeding ±2 were flagged as significant outliers.
+
+<p align="center">
+  <img src="images/outlier_cv_yoy.png" alt="CV outliers" width="680">
+</p>
+
+- **High Growth and High Volatility Categories:**
+      - **Nonstore Retailers:**  
+        This category is a standout, with significant variability and exceptional growth. Stakeholders should focus on investments in logistics, supply chain resilience, and scalability to manage demand spikes and sustain growth.
+      - **Electronic Shopping and Mail-order Houses:**  
+        A subset of Nonstore Retailers, this category also demonstrates the highest volatility and growth, further emphasizing the need for robust e-commerce infrastructure.
+    - **Declining Categories:**
+      - **Department Stores:**  
+        With negative YoY growth and relatively low CV, this category is experiencing stagnation and contraction. Strategic restructuring is necessary to address ongoing challenges.
+      - **Clothing Stores:**  
+        While the CV Z-score is close to the average, the Z-score for YoY growth is significantly above 2, indicating strong positive growth relative to other categories. This suggests rapid recovery or expansion compared to the overall market.
+
+
 - External shocks (e.g., economic downturns) affect (), (),  and () categories in () ways. () categories are more sensitive.
 
 ## Recommendations & Next Steps
