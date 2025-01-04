@@ -31,6 +31,8 @@ The raw data was explored and cleaned using Python to ensure accuracy and releva
 
 SQL queries were employed to extract actionable insights tailored for relevant business stakeholders.
 
+Business questions and specific sql queries can be found [here](queries/queries.sql)
+
 **Part 3: Visualizations**
 
 Python charts and Tableau were used to create explorative visualizations and an interactive dashboard, designed primarily to easily monitor key metrics.
