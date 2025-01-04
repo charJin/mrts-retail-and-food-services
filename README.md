@@ -3,16 +3,22 @@
 The Monthly Retail Trade Survey (MRTS) provides insights into the economic activity of the retail and food services industries. Using a stratified random sample of approximately 4,800 firms, it estimates monthly sales for over three million businesses nationwide. These estimates are weighted and benchmarked to reflect the full scope of the industries.
 
 This project analyzes MRTS data from 2017 to 2023, focusing on sales trends, industry performance, and the impact of major economic events, such as the COVID-19 pandemic. The findings aim to inform decision-making for businesses, policymakers, and researchers.
+
+To complement the MRTS data, this analysis incorporates **Consumer Price Index (CPI)** data from the **Bureau of Labor Statistics (BLS)**. The CPI dataset provides a measure of inflation, allowing for the adjustment of nominal sales to constant dollars. This enables a clearer understanding of real sales trends by accounting for changes in purchasing power over time.
 <details>
   
 <summary>More about the data used</summary>
 
-The data was retrieved from the Census Bureau's Monthly Retail Trade Survey (MRTS) API. 
+The main data was retrieved from the Census Bureau's Monthly Retail Trade Survey (MRTS) API. 
 
 - **API Call Construction**: A Python script was used to query the API with parameters specifying the data type, time range (2017–2023). Both seasonally adjusted and unadjusted metrics are retrieved.
 - **Data Handling**: The API response was parsed and transformed into a structured format (CSV) for further analysis.
 
 > The Python script used for this process is available [here](scripts/fetch_data.py).
+
+The secondary data was retrieved via [BLS CPI Supplemental Files](https://www.bls.gov/cpi/tables/supplemental-files/).
+
+Detailed cleaning for the data can be found [here](notebooks/retail-and-food-analysis.ipynb##CPI-Data-Cleaning).
 </details>
 
 **Work Flow**:
@@ -45,8 +51,8 @@ Here is the Entity Relationship Diagram:
 ## Insights
 
 ### Sale Trends and Growth Rates
-- Total **Retail Trade and Food Services** averages **$478,073.25** in monthly sales, contributing to **$6,828,246 annually**.  
-- The top categories are **"Motor Vehicle and Parts Dealers"**, **"Auto and Other Motor Vehicles"**, **"Food and Beverage Stores"**, **"Food Services and Drinking Places"**, **"General Merchandise Stores"**, and **"Grocery Stores"**.
+- Total **Retail Trade and Food Services** averages **$568,936.30** in monthly sales, contributing to **$6,827,235.57 annually**.  
+- The top categories are **"Motor Vehicle and Parts Dealers"**, **"Food and Beverage Stores"**, **"Food Services and Drinking Places"**, **"General Merchandise Stores"**, and **"Nonstore Retailers"**.
 - **Seasonality and Trends**:  
   Sale trends from **2017 to 2023** exhibit clear **seasonal patterns** across multiple categories. Below is an analysis of these patterns for some of these categories, supported by seasonal decomposition:
   
@@ -138,17 +144,43 @@ The **Coefficient of Variation (CV)** is a powerful metric for assessing market 
         With negative YoY growth and relatively low CV, this category is experiencing stagnation and contraction. Strategic restructuring is necessary to address ongoing challenges.
       - **Clothing Stores:**  
         While the CV Z-score is close to the average, the Z-score for YoY growth is significantly above 2, indicating strong positive growth relative to other categories. This suggests rapid recovery or expansion compared to the overall market.
+        
+The **Consumer Price Index (CPI)** is a measure of the average change over time in the prices paid by consumers for goods and services. It is published by the **Bureau of Labor Statistics (BLS)** and is widely used to track inflation. The CPI is standardized to a base year (e.g., 1982-1984 = 100) and reflects price changes relative to this base period.
+
+To account for inflation and express sales in terms of constant dollars, the following formula was used:
+
+Inflation-Adjusted Sales = (Monthly Sales / CPI Index  for all items) * 100
+
+- **Inflation's Impact Across Categories**
+  - **Nonstore Retailers** show the largest percent difference of **-63.29%**, indicating that inflation significantly affects their nominal growth when adjusted for constant dollars.
+  - However:
+  - Comparing this with **Department Stores** (percent difference of **-62.49%**, the least impacted category), the differences are marginal.
+  - This suggests that while inflation-adjusted sales of **Nonstore Retailers** appear to have been impacted, the minimal spread between categories supports the notion that **Nonstore Retailers** have experienced real growth, driven by the ongoing shift toward e-commerce.
+  - While all categories exhibit significant negative percent differences due to inflation, the relatively uniform impact suggests that the inflationary pressure is systemic rather than category-specific.
+  - Categories like **Food Services and Drinking Places** and **Gasoline Stations** also exhibit large percent differences (**-63.01%** and **-62.95%**, respectively), likely influenced by broader economic and consumer spending trends.
 
 
-- External shocks (e.g., economic downturns) affect (), (),  and () categories in () ways. () categories are more sensitive.
 
 ## Recommendations & Next Steps
 
 ### Corporate Executives
- - some advice
+  - **Prioritize E-commerce Investments**  
+  Nonstore Retailers have shown significant growth and volatility, driven by the shift toward e-commerce. Expanding online capabilities and improving logistics infrastructure can help sustain this momentum.
+  - **Focus on At-Risk Categories**  
+  Categories like **Department Stores** and **Electronics and Appliance Stores** are underperforming. Consider strategies to diversify revenue, such as transitioning to online channels, introducing new product lines, or restructuring operations. 
 ### Sales and Marketing Teams
-- some advice
+  - **Leverage Seasonality for Campaigns**  
+  Categories like **Clothing and Accessories Stores** and **Gasoline Stations** have distinct seasonal sales patterns. Focus marketing efforts during peak periods, such as holiday shopping or summer months, to maximize revenue.  
+  - **Capitalize on Post-COVID Recovery**  
+  The strong recovery in categories like **Food Services and Drinking Places** presents opportunities for targeted promotions and loyalty programs. Highlight social and experiential aspects of these categories to align with shifting consumer preferences.  
+  - **Emphasize Value During Inflation**  
+  With inflation impacting purchasing power, marketing campaigns should emphasize affordability and long-term value, particularly in essential categories like **Food and Beverage Stores**.
 ### Supply Chain and Operations Teams
-- some advice 
+  - **Scale for High-Volatility Categories**  
+  The growth in **Nonstore Retailers** and other high-volatility categories requires enhanced scalability. Invest in forecasting tools and improve supply chain flexibility to handle demand spikes effectively.  
+  - **Align Inventory with Seasonal Peaks**  
+  For categories with clear seasonality, such as **Clothing and Accessories Stores**, optimize inventory planning to meet demand during peak periods and reduce excess stock during slower months.  
+  - **Mitigate Inflationary Challenges**  
+  Strengthen supplier relationships to manage cost pressures and ensure consistent supply, particularly for categories like **Building Materials** that are more affected by inflation.
 
 
