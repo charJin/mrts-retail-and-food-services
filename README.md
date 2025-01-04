@@ -35,7 +35,9 @@ SQL queries were employed to extract actionable insights tailored for relevant b
 
 Python charts and Tableau were used to create explorative visualizations and an interactive dashboard, designed primarily to easily monitor key metrics.
 > **Note**: Some visualizations were performed early in the process to better understand the data and guide insight generation.
-
+> 
+> Tableau Visualizations are available [here](https://public.tableau.com/views/RetailSales_17359945353730/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link).
+> 
 **Part 4: Recommendations & Next Steps**
 
 Based on the findings, recommendations are proposed for future strategies and further exploration.
@@ -45,20 +47,38 @@ Based on the findings, recommendations are proposed for future strategies and fu
 Here is the Entity Relationship Diagram:
 
 <p align="center">
-  <img src="images/retail_food_diagram.png" alt="Entity Relationship Diagram" width="680">
+  <img src="images/retail_food_diagram.png" alt="Entity Relationship Diagram" width="710">
 </p>
 
 ## Insights
 
 ### Sale Trends and Growth Rates
+
+<p align="center">
+  <a href="https://public.tableau.com/views/RetailSales_17359945353730/Dashboard1?:language=en-US&:redirect=auth&:display_count=n&:origin=viz_share_link">
+    <img src="images/tableau_dashboard1.png" alt="Tableau Dashboard">
+  </a>
+</p>
+
+
+
+
 - Total **Retail Trade and Food Services** averages **$568,936.30** in monthly sales, contributing to **$6,827,235.57 annually**.  
 - The top categories are **"Motor Vehicle and Parts Dealers"**, **"Food and Beverage Stores"**, **"Food Services and Drinking Places"**, **"General Merchandise Stores"**, and **"Nonstore Retailers"**.
 - **Seasonality and Trends**:  
   Sale trends from **2017 to 2023** exhibit clear **seasonal patterns** across multiple categories. Below is an analysis of these patterns for some of these categories, supported by seasonal decomposition:
   
 <p align="center">
-  <img src="images/categories_seasonal.png" alt="Four Categories Seaosonal Plot" width="680">
+  <img src="images/categories_seasonal.png" alt="Four Categories Seaosonal Plot" width="770">
 </p>
+
+<details>
+  
+<summary>Plot Details</summary>
+
+Clearer visualizations can be found [here](notebooks/retail-and-food-analysis.ipynb##CPI-Data-Cleaning)
+
+</details>
 
 - The general category of **Retail Trade** shows steady and consistent upward trend over the years, reflecting the resilience and growth of the overall retail sector. It exhibits clear seasonality, with peaks occurring annually in November and December during holiday shopping periods, such as Black Friday and Christmas. These peaks have grown in magnitude over time, suggesting stronger consumer spending during these periods. Most fluctuations in this category are well-accounted for by the trend and seasonal components, with small and random residuals indicating limited unexplained variability.
   - **Food Services and Drinking Places**: Separating Food Services and Drinking Places separately, noticed that seasonality component shows peaks in summer months. This likely reflects the preference of dining out during vacations and warm weather.
@@ -78,7 +98,7 @@ Here is the Entity Relationship Diagram:
     - The resumption of major events and gatherings.
       
 <p align="center">
-  <img src="images/yoy_heatmap.png" alt="YoY Heatmap" width="680">
+  <img src="images/yoy_heatmap.png" alt="YoY Heatmap" width="710">
 </p>
 
 - **Categories Most Negatively Impacted During COVID**:  
@@ -110,7 +130,7 @@ Here is the Entity Relationship Diagram:
 The **Coefficient of Variation (CV)** is a powerful metric for assessing market risks and volatility, particularly in retail sales. By calculating CV from seasonally unadjusted MRTS monthly sales data, the analysis retains the natural variability of the market, enabling a deeper understanding of the risks faced by different categories. CV highlights how much sales fluctuate relative to their average, making it a suitable tool to identify categories with high volatility.
 
 <p align="center">
-  <img src="images/cv_bargraph.png" alt="CV Bargraph" width="680">
+  <img src="images/cv_bargraph.png" alt="CV Bargraph" width="710">
 </p>
 
 - **Categories with the Highest CV**
@@ -131,7 +151,7 @@ The **Coefficient of Variation (CV)** is a powerful metric for assessing market 
   - To further investigate the relationship between CV and YoY growth, Z-scores were calculated for both metrics to identify outliers. Categories with Z-scores exceeding ±2 were flagged as significant outliers.
 
 <p align="center">
-  <img src="images/outlier_cv_yoy.png" alt="CV outliers" width="680">
+  <img src="images/outlier_cv_yoy.png" alt="CV outliers" width="710">
 </p>
 
 - **High Growth and High Volatility Categories:**
@@ -144,7 +164,13 @@ The **Coefficient of Variation (CV)** is a powerful metric for assessing market 
         With negative YoY growth and relatively low CV, this category is experiencing stagnation and contraction. Strategic restructuring is necessary to address ongoing challenges.
       - **Clothing Stores:**  
         While the CV Z-score is close to the average, the Z-score for YoY growth is significantly above 2, indicating strong positive growth relative to other categories. This suggests rapid recovery or expansion compared to the overall market.
-        
+
+<p align="center">
+  <a href="https://public.tableau.com/views/RetailSales_17359945353730/Dashboard1?:language=en-US&:redirect=auth&:display_count=n&:origin=viz_share_link">
+    <img src="images/tableau_dashboard2.png" alt="Tableau Dashboard">
+  </a>
+</p>
+
 The **Consumer Price Index (CPI)** is a measure of the average change over time in the prices paid by consumers for goods and services. It is published by the **Bureau of Labor Statistics (BLS)** and is widely used to track inflation. The CPI is standardized to a base year (e.g., 1982-1984 = 100) and reflects price changes relative to this base period.
 
 To account for inflation and express sales in terms of constant dollars, the following formula was used:
